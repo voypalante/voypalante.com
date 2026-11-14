@@ -1,0 +1,9 @@
+// voypalante.com: a static page (public/) served by Cloudflare, no origin server.
+{
+  "name": "voypalante-site",
+  "compatibility_date": "2026-10-01",
+  "account_id": "1c8e300901b93aa5f80de5a56edc48d2",
+  "assets": { "directory": "./public" },
+  "routes": [{ "pattern": "voypalante.com/*", "zone_id": "69ffe3233bd2c70960756e9428fdbee3" }],
+  "workers_dev": false
+}
