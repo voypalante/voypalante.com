@@ -25,7 +25,7 @@ em { font-weight: inherit; }
 .wordmark { font-size: 19px; font-weight: 500; letter-spacing: -.05em; white-space: nowrap; }
 .topbar nav { margin-left: auto; display: flex; align-items: center; gap: 30px; }
 .topbar nav a { font-size: 13px; }
-.theme-toggle { border: 1px solid var(--line); border-radius: 50%; background: transparent; color: var(--text); width: 36px; height: 36px; padding: 0; cursor: pointer; display: grid; place-items: center; flex-shrink: 0; transition: border-color .3s; }
+.theme-toggle { border: 1px solid var(--line); border-radius: 0; background: transparent; color: var(--text); width: 36px; height: 36px; padding: 0; cursor: pointer; display: grid; place-items: center; flex-shrink: 0; transition: border-color .3s; }
 .theme-toggle[hidden] { display: none; }
 .theme-toggle:hover { border-color: var(--accent); color: var(--accent); }
 .hero { padding-top: 56px; padding-bottom: 32px; }

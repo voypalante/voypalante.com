@@ -11,6 +11,10 @@
       toggle.setAttribute('aria-label', `Switch to ${dark ? 'light' : 'dark'} theme`);
       toggle.title = `Switch to ${dark ? 'light' : 'dark'} theme`;
     }
+    const sym = toggle && toggle.querySelector('.theme-symbol');
+    if (sym) sym.innerHTML = dark
+      ? '<circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/>'
+      : '<path d="M20 14.5A8 8 0 019.5 4a8 8 0 1010.5 10.5z"/>';
     if (themeColor) themeColor.content = dark ? '#0d0d0f' : '#f7f4ee';
   }
   if (toggle) {
