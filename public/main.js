@@ -114,4 +114,10 @@
   function render_count(){ return items.filter(function(t){return !t.classList.contains('hide');}).length||1; }
   window.addEventListener('resize',function(){cycle();});
   if(document.fonts&&document.fonts.ready) document.fonts.ready.then(cycle); else cycle();
+  const teamDialog = document.getElementById('team');
+  const teamOpen = document.querySelector('[data-team]');
+  if (teamDialog && teamOpen && teamDialog.showModal) {
+    teamOpen.addEventListener('click', () => teamDialog.showModal());
+    teamDialog.addEventListener('click', event => { if (event.target === teamDialog) teamDialog.close(); });
+  } else if (teamOpen) teamOpen.hidden = true;
 })();
