@@ -1,9 +1,14 @@
 // voypalante.com: a static page (public/) served by Cloudflare, no origin server.
 {
   "name": "voypalante-site",
+  "main": "worker.js",
   "compatibility_date": "2026-10-01",
   "account_id": "1c8e300901b93aa5f80de5a56edc48d2",
-  "assets": { "directory": "./public" },
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "run_worker_first": ["/video/hero-panama.mp4"]
+  },
   "routes": [{ "pattern": "voypalante.com/*", "zone_id": "69ffe3233bd2c70960756e9428fdbee3" }],
   "workers_dev": false
 }
