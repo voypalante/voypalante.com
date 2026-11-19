@@ -10,5 +10,5 @@ npx wrangler@4 deploy
 
 ## Credits
 
-- Hero video: "Drone Footage of a Beach and Trees" by CoolPlaces4K JC, Pexels (https://www.pexels.com/video/drone-footage-of-a-beach-and-trees-13720413/), Pexels License. Trimmed, slowed to 0.65x and re-encoded.
+- Hero video: [Panama City waterfront footage from Pexels](https://videos.pexels.com/video-files/3683883/3683883-hd_1920_1080_30fps.mp4). Trimmed to 10 seconds and re-encoded for the web.
 - Fonts: Google Fonts (Fraunces, Hanken Grotesk, IBM Plex Mono).
